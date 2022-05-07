@@ -1,0 +1,32 @@
+
+<div class = 'container'>
+    <h2 class = 'd-flex justify-content-center'>
+      Add User Role
+    </h2>
+</div>
+
+<form [formGroup] ="userRoleForm" class="form-container" style="text-align: center; ">
+    <mat-card>
+        <mat-card-header>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="row">
+                <div class="col-md-6">
+                    <mat-form-field class="full-width">
+                        <input formControlName="Description"  matInput placeholder="Description">
+                    </mat-form-field>
+                </div>
+            </div>
+        </mat-card-content>
+
+        <mat-card-actions>
+            <button mat-raised-button color="primary">Add</button>
+        </mat-card-actions>
+
+    </mat-card>
+
+    <mat-card-actions>
+        <button mat-raised-button color="warn" routerLink="/showuserroles" >Cancel</button>
+    </mat-card-actions>
+
+</form>
